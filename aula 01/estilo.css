@@ -1,0 +1,32 @@
+body{
+    background: #d2d2c1 url(fundo.png);
+    font-family: Roboto, helvetica;
+}
+
+#menu{
+    background-color: gray;
+    width: 900px;
+    padding: 12px 0px;
+}
+#menu ul{
+    list-style: none;
+}
+
+#menu ul li{
+    display: inline;
+}
+#menu ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+}
+
+.principal{
+    width: 900px;
+    background-color: white;
+    
+}
+#conteudo{
+    padding: 10px;
+}
