@@ -1,32 +1,14 @@
-var num = Number(prompt('Digite um numero'))
+function tabuada(){
+var tab = document.getElementById('texto')
+var res = document.getElementById('res')
+var num = Number(tab.value)
+res.innerHTML = ''
 
-resposta()
-
-function resposta(){
-    var res = document.getElementById('res')
-    res.innerHTML = num
+for(var i = 1; i <= 10; ++i){
+    res.innerHTML += `${num} x ${i} = ${num * i}` + '<br>'
+    }
 }
 
-function soma(){
-    var n2 = Number(prompt('Digite outro numero'))
-    num = num + n2
-    resposta()
-}
-
-function divi(){
-    var n2 = Number(prompt('Digite outro numero'))
-    num = num / n2
-    resposta()
-}
-
-function multi(){
-    var n2 = Number(prompt('Digite outro numero'))
-    num = num * n2
-    resposta()
-}
-
-function subt(){
-    var n2 = Number(prompt('Digite outro numero'))
-    num = num - n2
-    resposta()
+function apagar(){
+    res.innerHTML = ''
 }

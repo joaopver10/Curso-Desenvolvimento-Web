@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +7,13 @@
 </head>
 <body>
     <div>
-
-        <p><input type="button" value="+" name="botao" onclick="soma()">
-            <input type="button" value="/" name="botao" onclick="divi()">
-            <input type="button" value="*" name="botao" onclick="multi()">
-            <input type="button" value="-" name="botao" onclick="subt()">
+        <p><input type="text" name="texto" id="texto"></p>
+        <p><input type="button" value="Criar" name="botao" onclick="tabuada()">
+            <input type="reset" value="Apagar" onclick="apagar()">
         </p>
     </div>
-
     <div id="res">
     </div>
-
     <script src="script.js"></script>
 </body>
 </html
