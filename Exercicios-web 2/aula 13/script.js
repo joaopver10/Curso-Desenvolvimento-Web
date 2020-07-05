@@ -1,14 +1,25 @@
-function tabuada(){
-var tab = document.getElementById('texto')
-var res = document.getElementById('res')
-var num = Number(tab.value)
-res.innerHTML = ''
+   //matriz
+   var alunos = [
+    {nome: 'Maria', notas: [2,5,8,9]},
+    {nome: 'José', notas: [2,1,5,8]},
+    {nome: 'João', notas: [1,5,3,2]},
+    {nome: 'Ana', notas: [4,5,3,8]},
+    {nome: 'lucia', notas: [2,1,8,5]}
+]
 
-for(var i = 1; i <= 10; ++i){
-    res.innerHTML += `${num} x ${i} = ${num * i}` + '<br>'
+
+for(var i = 0; i < alunos.length; i++){
+    var notas = alunos[i].notas
+    var total = 0
+    for(var j = 0; j < notas.length; j++){
+        total += notas[j]
+        
     }
+    var media = total / notas.length
+    
 }
 
-function apagar(){
-    res.innerHTML = ''
-}
+
+
+
+

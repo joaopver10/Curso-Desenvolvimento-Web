@@ -1,14 +1,34 @@
-function tabuada(){
-var tab = document.getElementById('texto')
-var res = document.getElementById('res')
-var num = Number(tab.value)
-res.innerHTML = ''
+var jogador 
+var computador 
+var escolhe = 'par'
 
-for(var i = 1; i <= 10; ++i){
-    res.innerHTML += `${num} x ${i} = ${num * i}` + '<br>'
-    }
+function sortear(max){
+    return Math.floor(Math.random() * max)
 }
 
-function apagar(){
-    res.innerHTML = ''
+function jogo(){
+  jogador = document.getElementById('num').value
+  computador = sortear(5)
+  jogador = Number(jogador)
+  computador = Number(computador)
+
+  var total = computador + jogador
+  var resultado = ( total % 2 === 0 ) ? 'par' : 'impar'
+
+  
+    
+    if (!jogador){
+        alert('digite algum numero por favor')
+    }else{
+        verificar(resultado)
+    }
+
+}
+
+function verificar(resultado){
+    if (escolhe == resultado){
+        alert('eu ganhei')
+    }else{
+        alert('o computador ganhou')
+    }
 }
