@@ -1,14 +1,6 @@
-function tabuada(){
-var tab = document.getElementById('texto')
-var res = document.getElementById('res')
-var num = Number(tab.value)
-res.innerHTML = ''
-
-for(var i = 1; i <= 10; ++i){
-    res.innerHTML += `${num} x ${i} = ${num * i}` + '<br>'
-    }
+function fibo(n){
+  if(n <= 2) return 1
+ return fibo( n - 1 ) + fibo(n - 2)      
 }
 
-function apagar(){
-    res.innerHTML = ''
-}
+console.log(fibo(6))
