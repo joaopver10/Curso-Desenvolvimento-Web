@@ -1,14 +1,5 @@
-function tabuada(){
-var tab = document.getElementById('texto')
-var res = document.getElementById('res')
-var num = Number(tab.value)
-res.innerHTML = ''
+var num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-for(var i = 1; i <= 10; ++i){
-    res.innerHTML += `${num} x ${i} = ${num * i}` + '<br>'
-    }
-}
-
-function apagar(){
-    res.innerHTML = ''
+function filt(n){
+    return n % 2 ===! 0
 }
