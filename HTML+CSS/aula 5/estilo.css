@@ -1,0 +1,25 @@
+*{
+    padding: 0 auto;
+    margin: 0 auto;
+}
+
+body{
+    background-color: #47FF7A ;
+}
+
+div{
+    background-color: white;
+    width: 500px;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px #478E7A;
+}
+div h1{
+    text-align: center;
+}
+
+div p{
+    text-align: center;
+    margin: 15px 100px;
+}
