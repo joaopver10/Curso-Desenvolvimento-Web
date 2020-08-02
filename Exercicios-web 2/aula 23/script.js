@@ -44,3 +44,15 @@ class carro{
         console.log(`${this.marca} ${this.modelo}`)
     }
 }
+
+//instanciando objeto -- Forma 1
+/*
+let curso = new Object()
+curso.nome = "Programação"
+curso.preco = 25.00
+
+console.log(curso)
+curso ['qtd_alunos'] = 999
+console.log(curso)
+*/
+
