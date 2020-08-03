@@ -1,0 +1,22 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-size: 1.15em;
+}
+
+/* font-style > font-weight > font-size > font-family */
+
+@font-face{
+    font-family: ;
+    src: url('') format();
+}
+
+/* tipos de formato()
+ opentype(otf)
+ truetype(ttf)
+ embedded-opentype
+ tryetype-aat(Apple advanced - Typography)
+ svg
+ */
