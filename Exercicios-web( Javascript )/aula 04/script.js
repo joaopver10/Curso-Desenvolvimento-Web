@@ -14,3 +14,5 @@ nbaixa = nota.filter(function (nota){
 })
 
 console.log(nbaixa)
+
+
